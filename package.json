@@ -35,8 +35,15 @@
     "ember-data": "^2.3.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
+    "ember-leaflet": "2.1.2",
     "ember-load-initializers": "^0.5.0",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.0"
+    "express": "^4.13.4",
+    "glob": "^4.5.3",
+    "loader.js": "^4.0.0",
+    "morgan": "^1.7.0"
+  },
+  "dependencies": {
+    "zip_codes": "git+https://github.com/JHKennedy4/zip-code-boundaries.git"
   }
 }

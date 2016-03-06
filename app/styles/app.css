@@ -1,0 +1,7 @@
+.zipcode-map,
+.leaflet-container {
+  width: 800px;
+  height: 800px;
+  margin: 25px auto;
+  background: #ededed;
+}

@@ -1,0 +1,16 @@
+<h2>Lat: {{lat}}</h2>
+<h2>Lng: {{lng}}</h2>
+<h2>Zoom: {{zoom}}</h2>
+{{#leaflet-map lat=lat lng=lng zoom=zoom onMoveend=(action "updateCenter")}}
+  {{tile-layer url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"}}
+
+  {{#each warehouses as |warehouse|}}
+    {{#marker-layer location=warehouse.location}}
+      <h3>{{warehouse.name}}</h3>
+      {{warehouse.address}}
+    {{/marker-layer}}
+  {{/each}}
+
+  {{leaflet-geojson pages=zipcodes}}
+
+{{/leaflet-map}}
